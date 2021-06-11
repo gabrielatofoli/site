@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row; /*essa estilização já é o default do display flex*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color:#E50914;
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* === conteúdo === */
+.container {
+    display: flex;
+    align-items:flex-start;
+}
+
+.video {
+    margin-right: 15px;
+}
+
+.inf {
+    font-size: 20px;
+    padding-left: 50px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.elenco {
+    margin: 2px;
+}
+
+.item {
+    font-size: 10pt;
+    margin: 0 5px 0 20px;
+    float: left;
+}
+
+
+/*.item {
+    display: inline-block;
+
+    align-content: flex-start;
+    justify-content: center;
+    margin-right: 50px;
+    
+}*/
+
+/* === responsividade === */
+
+@media screen and (max-width: 700px){
+    
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .atores {
+        float: left;
+    
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .inf {
+        width: 50%;
+    }
+
+    
+}

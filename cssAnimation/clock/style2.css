@@ -1,0 +1,84 @@
+body {
+    background-color: #ffff4d;
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: FLIPclockBlack;
+    src: url(flip_clock/FLIPclockblack.ttf);
+}
+
+.title {
+font-family: FLIPclockBlack;
+font-size: 92px;
+text-align: center;
+}
+
+.clock {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    height: 120px;
+    width: 120px;
+    background-color: white;
+    border-radius: 50%;
+    border: 6px solid #5c5c8a;
+}
+
+.center {
+    position: relative;
+    background-color: tomato;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 53px;
+    left: 53px;
+}
+
+.hand1 {
+    position: relative;
+    background-color: tomato;
+    height: 55px;
+    width: 6px;
+    border-radius: 27px;
+    bottom: 7px;
+    left: 57px; 
+    animation: spin-a 2s infinite;
+    transform-origin: bottom;
+}
+
+@keyframes spin-a {
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+.hand2 {
+    position: relative;
+    background-color: tomato;
+    height: 6px;
+    width: 35px;
+    border-radius: 15px;
+    left: 26px;
+    bottom: 13px;
+    animation: spin-b 3s infinite;
+    transform-origin: right;
+}
+
+@keyframes spin-b {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.click {
+    position: relative;
+    background-color: black;
+    padding: 7px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    left: 624px;
+    top:300px;
+}

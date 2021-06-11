@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* ======= BARRA DE NAVEGAÇÃO =======*/
+
+
+.logo{
+    width: 250px;
+    height: 40px;
+    border: 2px #ae7cc4 solid;
+    box-shadow:
+                #5488bd -5px -5px;
+    line-height:35px;
+    font-size:16pt;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    float:left; 
+    text-align:center  
+}
+.navbar{
+    height: 50px;
+    background: white;
+    border: none;
+}
+
+.flag {
+    position: relative;
+    top: -15px;
+}
+nav.navbar-transparente{
+    
+    background: rgb(255, 255, 255);
+    border: none;
+}
+
+.navbar-brand{
+    padding: 5px 0 0 19px ;
+   
+}
+
+/*====== CAPA ======*/
+main{
+    text-align: left;
+    margin: 110px 80px 60px 40px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: #5488bd;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    color: #132131;
+    font-weight: 300;
+    font-size: 17px;
+    
+}
+.p, #resume{
+    color: #5488bd;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.btn{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    color: white;
+    background: #ae7cc4;
+    margin-top: 12px;
+    margin-bottom: 40px;
+    margin: 0 10px 60px px;
+    
+}
+.btn:hover{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-decoration:underline ;
+    font-size: 23px;
+    color: white;
+    background: #ae7cc4;
+    
+}
+
+.btn-secondary{
+    margin: 10px 10px 50px 30px;
+}
+
+.portifolio {
+    padding-left: 100px;
+}
+
+.projeto {
+    box-shadow:#5488bd -5px 5px 10px;
+    
+}
+
+img{
+    margin-left: 17px;
+}

@@ -1,0 +1,120 @@
+body{
+    background: repeating-linear-gradient(
+        45deg,
+        #ffc8dd,
+        #ffc8dd 25px,
+        #bde0fe 25px,
+        #bde0fe 50px
+    );
+    width: 100%vh;
+    height: 624px;
+
+}
+         
+.container{
+    background-color: white;
+    height: 624px;
+    font-family: monospace;
+    text-align: center;
+}
+h1{
+    position: relative;
+    top: 50px;
+}
+h2{
+    font-family: fantasy;
+    font-weight: 900;
+    position: relative;
+    top: 70px;
+}
+h3{
+    position: relative;
+    top: 380px;
+}
+
+.box{
+    background-color: #ffc8dd;
+    height: 70px;
+    position: relative;
+    top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cream{
+    background-color: white;
+    border-color: #bde0fe;
+    border-style: solid;
+    border-width: 3px 0 3px 0;
+    height: 10px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 160px;
+}
+
+.box2{
+   background-color: #bde0fe;
+   height: 70px;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   bottom: 70px;
+
+}
+
+.cream2{
+    background-color: white;
+    border-color: #ffc8dd;
+    border-style: solid;
+    border-width: 3px 0 3px 0;
+    height: 10px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: -110px;
+}
+
+.box3{
+    background-color: #ffc8dd;
+    height: 50px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 200px;
+ }
+
+ .cream3{
+    background-color: white;
+    border-color: #bde0fe;
+    border-style: solid;
+    border-width: 3px 0 3px 0;
+    height: 10px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: -230px;
+}
+
+.candle{
+    background-color: #fcf6bd;
+    height: 35px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 295px;
+}
+
+.flame{
+    background-color: darkorange;
+    height: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 12px;
+    border-radius: 0 50% 50% 50%;
+    box-shadow: 0 0 5px darkorange,
+    0 0 20px darkorange,
+    0 0 40px darkorange,
+    0 0 60px darkorange;;
+}

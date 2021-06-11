@@ -1,0 +1,76 @@
+body {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    color: white;
+    font-size: 55px;
+    text-align: center;
+    font-family: 'Bungee Outline', cursive;
+    letter-spacing: 12px;
+}
+
+.title {
+    text-shadow: 0 0 5px #39ff14,
+                 0 0 20px #39ff14,
+                 0 0 40px #39ff14,
+                 0 0 60px #39ff14;
+}
+
+.fidget {
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    height: 80px;
+    width: 80px;
+    background-color: #f2f2f2;
+    border-radius: 50px;
+    animation: spin 2s infinite;
+}
+
+@keyframes spin{
+    50%{
+        transform: rotate(360deg);
+    }
+}
+
+.circle1, .circle2, .circle3 {
+    position: relative;
+    background-color: transparent;
+    border: 5px solid #f2f2f2;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.circle1 {
+    bottom: 47px;
+    left: 9px;
+}
+
+.circle2 {
+    bottom: 30px;
+    left: 60px;
+}
+
+.circle3 {
+    bottom: 90px;
+    right: 42px;
+}
+
+.inner1, .inner2, .inner3 {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #39ff14;
+    left: 10px;
+    top: 10px;
+    box-shadow: 0 0 5px #39ff14,
+                0 0 20px #39ff14,
+                0 0 40px #39ff14,
+                0 0 60px #39ff14;;
+}
+

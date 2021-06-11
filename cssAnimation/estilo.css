@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+html{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, hsl(278, 65%, 84%) 8%, #a2dde0 37%, #a1cbf4 67%, #68a0d8 89%);
+    background-repeat: no-repeat;
+}
+
+.marketing{
+    margin: 100px auto;
+}
+main{
+    text-align: left;
+    margin: 110px 80px 60px 40px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: #5488bd;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    color: #132131;
+    font-weight: 300;
+    font-size: 17px;
+    
+}
+
+
+.btn{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    color: white;
+    background: #ae7cc4;
+    margin-top: 12px;
+    margin-bottom: 40px;
+    
+}
+.btn:hover{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-decoration:underline ;
+    font-size: 23px;
+    color: white;
+    background: #ae7cc4;
+    
+}
+
+.portifolio {
+    padding-left: 100px;
+}
+
+.projeto {
+    box-shadow:#5488bd -5px 5px 10px;
+}
