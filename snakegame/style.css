@@ -1,0 +1,25 @@
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    background-repeat: no-repeat;
+    color: rgb(52, 165, 52);
+}
+
+img {
+    width: 430px;
+    height: 600px;
+    position: relative;
+   
+    left: 120px; 
+}
+
+canvas {
+    z-index: +1;
+    position: relative;
+    top: 21px;
+    right: 230px;
+    border-radius: 15px;
+}

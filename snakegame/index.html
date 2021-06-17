@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div><img src="nokia.PNG" alt="Imagem de celular"></div>
+    <canvas id="stage" width="268" height="194"></canvas>
+   
+
+    <script>
+        window.onload = function(){
+
+            var stage = document.getElementById('stage');
+            var ctx = stage.getContext('2d');
+            document.addEventListener("keydown", keyPush);
+
+            setInterval(game, 80);
+
+            const vel = 1;
+
+            var vx = vy = 0;
+            var px = py = 10;
+            var tp = 5;
+            var qpx = 54;
+            var qpy = 39;
+            var cx = cy = 15;
+
+            var trail = [];
+            tail = 5;
+
+            function game() {
+                px += vx;
+                py += vy;
+                if (px < 0) {
+                    px = qpx - 1;
+                }
+                if (px > qpx - 1) {
+                    px = 0
+                }
+                if (py < 0) {
+                    py = qpy - 1;
+                }
+                if (py > qpy - 1) {
+                    py = 0
+                }
+
+            ctx.fillStyle = "#8FA37E";
+            ctx.fillRect(0, 0, stage.width, stage.height);
+
+            ctx.fillStyle = "#363D2F";
+            ctx.fillRect(cx*tp, cy*tp, tp, tp);
+
+            ctx.fillStyle = "#363D2F";
+            for (var i = 0; i < trail.length; i++) {
+                ctx.fillRect(trail[i].x*tp, trail[i].y*tp, tp-0.5, tp-0.5);
+                if (trail[i].x == px && trail[i].y == py) {
+                    vx = vy = 0;
+                    tail = 5;
+                    
+                }
+            }
+            
+            trail.push({x:px, y:py})
+            while (trail.length > tail) {
+                trail.shift();
+            }
+            if (cx == px && cy == py) {
+                tail++;
+                cx = Math.floor(Math.random()*qpx);
+                cy = Math.floor(Math.random()*qpy);
+            }
+
+        }
+
+        function keyPush(event) {
+
+            switch (event.keyCode) {
+                case 37: //left
+                    vx = -vel;
+                    vy = 0;
+                    break;
+                case 38: //up
+                    vx = 0
+                    vy = -vel;
+                    break;
+                case 39: //right
+                    vx = vel;
+                    vy = 0;
+                    break;  
+                case 40: //down
+                    vx = 0;
+                    vy = vel;
+                    break;            
+
+            }
+        }
+
+
+
+            
+        }
+    </script>
+</body>
+</html>
