@@ -71,14 +71,3 @@ text-align: center;
         transform: rotate(360deg);
     }
 }
-
-.click {
-    position: relative;
-    background-color: black;
-    padding: 7px;
-    text-align: center;
-    border-radius: 20px;
-    color: white;
-    left: 624px;
-    top:300px;
-}
